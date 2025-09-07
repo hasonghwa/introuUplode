@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개페이지</title>
+    <style>
+        .introtext{
+            font-size: 50px;
+            text-align: center;
+
+            
+        }
+        
+
+        .weight{
+           
+            
+            padding: 10px;
+            text-align: center;
+            font-size: 50px;
+            
+           
+        }
+        .weighttext{
+            font-size: 30px;
+            text-align: center;
+            background-color: rgb(200, 198, 128);
+            
+        }
+       
+        .box1{
+            background-color: rgb(185, 198, 128);
+           
+        }
+       tr th {
+            border:1px solid #000000;     
+            font-size: 20px;
+            padding: 10px;
+            
+       }
+       td {
+        font-size: 20px;
+        padding: 15px;
+       
+       }
+       table {   
+        border:1px solid #222; 
+        border-collapse: collapse; 
+        text-align: center;
+        margin: auto;
+       
+        
+    }
+
+      #container{
+            width: 400px;
+            height: 20px auto;
+        }
+        .time {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            color : rgba(43, 97, 0, 0.959);
+        }
+        ul{
+            font-size: 25px;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div id="container">
+        <div class="time"></div>
+    </div>
+
+   
+ <table>
+    <div class="introtext">자기소개</div>
+ 
+    <div style="text-align: center; margin-top: 10px;">
+    <img src = "../media/갈색푸들.jpeg" alt="갈색푸들">
+    </div>
+  
+    <h1>야곱 (3)</h1>
+    <h2>곱슬머리, 먹보, 자는걸 좋아함 , 다이어트(유지중)</h2>
+
+</table>  
+<hr>
+<table>
+<h2 class="box1">경력</h2>
+<ul>
+
+    <li>신발 씹기 -3년</li>
+    <li>음식 훔쳐 먹기 -1년</li>
+    <li>탈출 시도(목줄 끊고 도망감) -5번</li>
+    <li>쓰레기 줏어먹기 -7번</li>
+    <li>쿠션 파괴 -6개</li>
+</ul>
+<hr>
+<h2 class="box1">특기</h2>
+<ul>
+     <li>공 가져오기</li>
+    <li>다른 강아지들과 금세 친해지기</li>
+    <li>수영 (개헤엄)</li>
+    <li>높이 점프 하기</li>
+    
+</ul>
+</table>
+<hr>
+
+ <table class="weight" >
+                
+                <section>
+               
+                <table style="width: 100%;">
+                  <div class="weighttext">야곱이의 넉달 간 몸무게 변화</div>
+                  <thead>
+                      <tr>
+                          <th>다이어트 전 체중</th>
+                          <th>한 달</th>
+                          <th>두 달</th>
+                          <th>세 달</th>
+                          <th>네 달</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>8.5(과체중)</td>
+                          <td>7.9</td>
+                          <td>7.2</td>
+                          <td>7.5</td>
+                          <td>6.2</td>
+                      </tr>
+                     
+                  </tbody>
+                </table>
+            </section>
+           
+
+
+
+</body>
+</html>
+
+    <script>
+    setInterval(()=>{
+        let datetime = new Date();
+        let obj = document.querySelector(".time");
+        let time = 
+            datetime.getHours() + " : "
+            + datetime.getMinutes() + " : "
+            + datetime.getSeconds(); 
+        obj.innerHTML = time;
+    }, 1000);
+</script>
+
+
